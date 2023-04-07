@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    .toggle-bar {
+        @apply w-10 h-5 p-[2px] rounded-[20px] bg-slate-800 cursor-pointer overflow-hidden transition ease-in delay-75;
+    }
+
+    .toggle-btn {
+        @apply w-4 h-4 rounded-[50%] bg-white transition-transform translate-x-0 delay-75 ease-in;
+    }
+
+    .dark-mode-toggle-bar {
+        @apply bg-white;
+    }
+
+    .dark-mode-toggle-btn {
+        @apply bg-slate-900 translate-x-[120%];
+    }
+}
+
+@layer utilities {
+    .transition-slow-all {
+        transition: all .5s ease;
+    } 
+}
+
+html {
+    font-family: Space Grotesk;
+}
+
+body {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    /* background-image: linear-gradient(60deg, #b2219f, #68a1d0);
+    background-repeat: no-repeat; */
+}
+

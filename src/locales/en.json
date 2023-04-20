@@ -1,3 +1,9 @@
 {
-  "message": "hello i18n !!"
+  "fullName": "DANG QUOC TUAN",
+  "position": "Software Developer",
+  "vietnamese": "Vietnamese",
+  "english":  "English",
+  "title": {
+    "general-information": "General Information"
+  }
 }
